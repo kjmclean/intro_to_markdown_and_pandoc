@@ -23,7 +23,7 @@ The alternative to the *WYSIWYG* is a *WYSIWYM* (*What You See I What You Want*)
 * **html**
 The most popular *Markup* language in the world is probably *html*, which is used to determine how nearly all text on the web is rendered. For a sense of how *html* markup looks, try right-clicking on this page and selecting *View Page Source*. Each one of those colons, quotes, and parentheses provides typsetting instructions for your browser. The browser then consults the page's associated *Cascading Style Sheet* (*CSS*) on how each markup instruction should be rendered onscreen. Two different *CSS* style sheets will generate two different web pages (*e.g*: different layout, text sizes, or colors).
 
-* \LaTeX
+* ![LaTeX](https://latex.codecogs.com/gif.latex?\LaTeX)
 \LaTex and its progenitor \TeX (pronounced LayTech and Tech, the last letter is a Greek *Chi*, not an 'x') are part of a family of *WYSIWYM* editors originally developed for typsetting printed documents that is still widely used for typesetting books, journal articles, and theses. Like, *html*, user annotates a written document with specific markup tags then passes it through a \LaTeX interpreter that renders the final document based on the *Class* and *packages* specified by the user. While it has a steep learning curve and can be intimidating for the novice user, it is an extremely powerful tool with a large (if diminishing) user base. If you're interested in trying your hand at \LaTeX, start with our tutorial [here](https://github.com/mrsunny0/LaTeX-thesis).
 
 * Markdown
