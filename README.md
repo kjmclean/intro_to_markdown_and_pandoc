@@ -12,7 +12,7 @@ This process: *Markup* and *Typesetting* is still how all modern day software ge
 
 For most day to day purposes, word processors like *Microsoft Word* are fast and convenient. However, if you've ever written a long document (*e.g*: over 100 pages), or one with complex structure (chapters or nested subsections) or embedded images, you may have found the convenience quickly gives way to frustration and chaos.
 
- **INSERT IMAGE HERE**
+[tweet-image](https://raw.githubusercontent.com/kjmclean/intro_to_markdown_and_pandoc/master/tweet_image.png)
 
 *Microsoft Word* is what is known as a *WYSIWYG* (*What You See is What You Get*). The tradeoff for the speed and convenience of real-time typsetting is a sometimes inexplicable and often infuriating lack of control of how the document is formatted.
 
@@ -24,7 +24,7 @@ The alternative to the *WYSIWYG* is a *WYSIWYM* (*What You See I What You Want*)
 The most popular *Markup* language in the world is probably *html*, which is used to determine how nearly all text on the web is rendered. For a sense of how *html* markup looks, try right-clicking on this page and selecting *View Page Source*. Each one of those colons, quotes, and parentheses provides typsetting instructions for your browser. The browser then consults the page's associated *Cascading Style Sheet* (*CSS*) on how each markup instruction should be rendered onscreen. Two different *CSS* style sheets will generate two different web pages (*e.g*: different layout, text sizes, or colors).
 
 * \LaTeX
-\LaTex and its progenitor \TeX (pronounced LayTech and Tech, the last letter is a Greek *Chi*, not an 'x') are part of a family of *WYSIWYM* editors originally developed for typsetting printed documents that is still widely used for typesetting books, journal articles, and theses. Like, *html*, user annotates a written document with specific markup tags then passes it through a \LaTeX interpreter that renders the final document based on the *Class* and *packages* specified by the user. While it has a steep learning curve and can be intimidating for the novice user, it is an extremely powerful tool with a large (if diminishing) user base. If you're interested in trying your hand at \LaTeX, start with our tutorial **INSERT LINK**.
+\LaTex and its progenitor \TeX (pronounced LayTech and Tech, the last letter is a Greek *Chi*, not an 'x') are part of a family of *WYSIWYM* editors originally developed for typsetting printed documents that is still widely used for typesetting books, journal articles, and theses. Like, *html*, user annotates a written document with specific markup tags then passes it through a \LaTeX interpreter that renders the final document based on the *Class* and *packages* specified by the user. While it has a steep learning curve and can be intimidating for the novice user, it is an extremely powerful tool with a large (if diminishing) user base. If you're interested in trying your hand at \LaTeX, start with our tutorial [here](https://github.com/mrsunny0/LaTeX-thesis).
 
 * Markdown
 Markdown is the youngest and simplest of common markup languages. Variations of it are used in many websites and applications, such as *reddit*, *Wordpress*, *Slack*, and *WhatsApp*. If you've ever bolded text with a couple of asterisks, you've used *Markdown*.
@@ -63,7 +63,7 @@ Compare, for example, some common markup tags between *html*, \LaTeX, and their 
 
 	Table 2. Common \LaTeX markup tags.
 
-Place holder text.
+
 
 | Markup 				| Markdown	 		 	|
 |:----------------------|:----------------------|
