@@ -21,19 +21,22 @@ The alternative to the *WYSIWYG* is a *WYSIWYM* (*What You See I What You Want*)
 ### Common Markup Languages
 
 * **html**
+
 The most popular *Markup* language in the world is probably *html*, which is used to determine how nearly all text on the web is rendered. For a sense of how *html* markup looks, try right-clicking on this page and selecting *View Page Source*. Each one of those colons, quotes, and parentheses provides typsetting instructions for your browser. The browser then consults the page's associated *Cascading Style Sheet* (*CSS*) on how each markup instruction should be rendered onscreen. Two different *CSS* style sheets will generate two different web pages (*e.g*: different layout, text sizes, or colors).
 
 * ![LaTeX](https://latex.codecogs.com/gif.latex?\LaTeX)
-\LaTex and its progenitor \TeX (pronounced LayTech and Tech, the last letter is a Greek *Chi*, not an 'x') are part of a family of *WYSIWYM* editors originally developed for typsetting printed documents that is still widely used for typesetting books, journal articles, and theses. Like, *html*, user annotates a written document with specific markup tags then passes it through a \LaTeX interpreter that renders the final document based on the *Class* and *packages* specified by the user. While it has a steep learning curve and can be intimidating for the novice user, it is an extremely powerful tool with a large (if diminishing) user base. If you're interested in trying your hand at \LaTeX, start with our tutorial [here](https://github.com/mrsunny0/LaTeX-thesis).
+
+![LaTeX](https://latex.codecogs.com/gif.latex?\LaTeX) and its progenitor \TeX (pronounced LayTech and Tech, the last letter is a Greek *Chi*, not an 'x') are part of a family of *WYSIWYM* editors originally developed for typsetting printed documents that is still widely used for typesetting books, journal articles, and theses. Like, *html*, user annotates a written document with specific markup tags then passes it through a ![LaTeX](https://latex.codecogs.com/gif.latex?\LaTeX) interpreter that renders the final document based on the *Class* and *packages* specified by the user. While it has a steep learning curve and can be intimidating for the novice user, it is an extremely powerful tool with a large (if diminishing) user base. If you're interested in trying your hand at ![LaTeX](https://latex.codecogs.com/gif.latex?\LaTeX), start with our tutorial [here](https://github.com/mrsunny0![LaTeX](https://latex.codecogs.com/gif.latex?![LaTeX](https://latex.codecogs.com/gif.latex?\LaTeX))-thesis).
 
 * Markdown
+
 Markdown is the youngest and simplest of common markup languages. Variations of it are used in many websites and applications, such as *reddit*, *Wordpress*, *Slack*, and *WhatsApp*. If you've ever bolded text with a couple of asterisks, you've used *Markdown*.
 
 ## The Simplicity of Markdown
 
 The beauty and power of Markdown lie in its simplicity. It is easy to write and easy to read.
 
-Compare, for example, some common markup tags between *html*, \LaTeX, and their *Markdown* equivalents:
+Compare, for example, some common markup tags between *html*, ![LaTeX](https://latex.codecogs.com/gif.latex?\LaTeX), and their *Markdown* equivalents:
 
 | Markup 				| html 													|
 |:--------------------- | :-----------------------------------------------------|
@@ -50,7 +53,7 @@ Compare, for example, some common markup tags between *html*, \LaTeX, and their 
 
 
 
-| Markup 				|  \LaTeX													|
+| Markup 				|  ![LaTeX](https://latex.codecogs.com/gif.latex?\LaTeX)													|
 |:----------------------|:---------------------------------------------------------|
 |  Section Heading 1	| \\section\{Your Section\}\\label\{your-section\}			|
 |  Section Heading 2	| \\subsection\{Your Section\}\\label\{your-section-1\}		|
@@ -61,7 +64,7 @@ Compare, for example, some common markup tags between *html*, \LaTeX, and their 
 |  Superscripts 		| 10\\textsuperscript\{5\}									|
 |  Subscripts	 		| H\\textsubscript\{2\}O									|
 
-	Table 2. Common \LaTeX markup tags.
+	Table 2. Common ![LaTeX](https://latex.codecogs.com/gif.latex?\LaTeX) markup tags.
 
 
 
@@ -78,4 +81,4 @@ Compare, for example, some common markup tags between *html*, \LaTeX, and their 
 
 	Table 3. Common Markdown markup tags.
 
-Compared to the other two, *Markdown* is much more intuitive and much less disruptive to read and write. More importantly, however, translators such as *pandoc* (see below) allow you to write in *Markdown* then convert your document. So, if you need to write text for a webpage, or want to try \LaTeX with training wheels, *Markdown* + *pandoc* is for you.
+Compared to the other two, *Markdown* is much more intuitive and much less disruptive to read and write. More importantly, however, translators such as *pandoc* (see below) allow you to write in *Markdown* then convert your document. So, if you need to write text for a webpage, or want to try ![LaTeX](https://latex.codecogs.com/gif.latex?\LaTeX) with training wheels, *Markdown* + *pandoc* is for you.
