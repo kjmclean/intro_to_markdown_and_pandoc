@@ -12,7 +12,7 @@ This process: *Markup* and *Typesetting* is still how all modern day software ge
 
 For most day to day purposes, word processors like *Microsoft Word* are fast and convenient. However, if you've ever written a long document (*e.g*: over 100 pages), or one with complex structure (chapters or nested subsections) or embedded images, you may have found the convenience quickly gives way to frustration and chaos.
 
-[tweet-image](https://raw.githubusercontent.com/kjmclean/intro_to_markdown_and_pandoc/master/tweet_image.png)
+![tweet-image](https://raw.githubusercontent.com/kjmclean/intro_to_markdown_and_pandoc/master/tweet_image.png)
 
 *Microsoft Word* is what is known as a *WYSIWYG* (*What You See is What You Get*). The tradeoff for the speed and convenience of real-time typsetting is a sometimes inexplicable and often infuriating lack of control of how the document is formatted.
 
