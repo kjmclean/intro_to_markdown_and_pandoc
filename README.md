@@ -128,7 +128,7 @@ Lastly, this demo assumes a certain degree of familiarity with a \*\nix command 
 
 ### Your first _pandoc_ conversion
 
-Save this [sample_markdown_file.md]() in your working directory. Open it with the text editor of your choice and take a look. You should see a few paragraphs of text marked up with common Markdown markups (_e.g._ \#, \*, _etc_).
+Save this [sample_markdown_file.md](https://raw.githubusercontent.com/kjmclean/intro_to_markdown_and_pandoc/master/sample_markdown_file.md) in your working directory. Open it with the text editor of your choice and take a look. You should see a few paragraphs of text marked up with common Markdown markups (_e.g._ \#, \*, _etc_).
 
 Let's try converting it to a pdf with _pandoc_. Type the following into the command line:
 
