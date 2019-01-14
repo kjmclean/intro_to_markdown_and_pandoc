@@ -161,7 +161,7 @@ Open example_03.docx in _MS_ _Word_ and take a look. You should see the document
 
 If the default settings aren't to your liking, you can always use a different document (.docx) or template (.dotx) for conversion. 
 
-For example, download [msword1.dotx]() into your working directory. Open the file in _Word_ and take a look. You should see an abbreviated article style after the BECL website. If we use this document as a reference, we can convert our Markdown file into that same style.
+For example, download [msword1.dotx](https://github.com/kjmclean/intro_to_markdown_and_pandoc/raw/master/msword1.dotx) into your working directory. Open the file in _Word_ and take a look. You should see an abbreviated article style after the BECL website. If we use this document as a reference, we can convert our Markdown file into that same style.
 
 Try running the following on the command line:
 
@@ -172,7 +172,7 @@ pandoc sample_markdown_file.md --reference-doc msword1.dotx -o example_04.docx
 
 Open example_04.docx and take a look. The sample_markdown_file.md should now be in the style as msword1.dotx.
 
-This will work for any pre-generated _MS_ _Word_ style template or document. Try it again. Download [msword2.dotx]() into your working directory. Open it up in _Word_ and take a look. This time, the file should appear blank. However, the style information is still encoded. Try converting your Markdown file with msword2.dotx as a reference:
+This will work for any pre-generated _MS_ _Word_ style template or document. Try it again. Download [msword2.dotx](https://github.com/kjmclean/intro_to_markdown_and_pandoc/raw/master/msword2.dotx) into your working directory. Open it up in _Word_ and take a look. This time, the file should appear blank. However, the style information is still encoded. Try converting your Markdown file with msword2.dotx as a reference:
 
 ```
 pandoc sample_markdown_file.md --reference-doc msword2.dotx -o example_05.docx
@@ -312,7 +312,7 @@ $\newpage$
 
 See the reference keys starting with the square parentheses and \@ symbols? They are stand-ins for how the citation in the Markdown text. When converting through pandoc, we will specity a citation style and the final document will be rendered in that style.
 
-Download this bibliography file, [pandoc_demo.bib](), and this citation style file (from the journal, Cell), [cell.csl](), into your working directory. Now, convert it to a pdf while calling the bibliography and citation style:
+Download this bibliography file, [pandoc_demo.bib](https://github.com/kjmclean/intro_to_markdown_and_pandoc/raw/master/pandoc_demo.bib), and this citation style file (from the journal, Cell), [cell.csl](https://github.com/kjmclean/intro_to_markdown_and_pandoc/raw/master/cell.csl), into your working directory. Now, convert it to a pdf while calling the bibliography and citation style:
 
 ```
 pandoc sample_markdown_file.md --filter pandoc-citeproc --bibliography=pandoc_demo.bib --csl=cell.csl -o example_11.pdf
