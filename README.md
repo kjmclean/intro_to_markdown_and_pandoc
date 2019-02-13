@@ -9,7 +9,6 @@
     + [Markdown](#markdown)
 - [The Simplicity of Markdown](#the-simplicity-of-markdown)
 - [An Introduction to pandoc](#an-introduction-to-pandoc)
-  * [Pandoc](#pandoc)
   * [Your first pandoc conversion](#your-first-pandoc-conversion)
   * [Converting to Microsoft Word from Markdown](#converting-to-microsoft-word-from-markdown)
   * [Putting LaTeX in your Markdown](#putting-latex-in-your-markdown)
@@ -23,11 +22,11 @@
 
 ### Markup and Typesetting
 
-*Typesetting* is the process of specifying the details of how a written document is represented visually, from the margins widths and the page size, to the font choice, style, and spacing.
+*Typesetting* is the process of specifying the details of how a written document is represented visually, from the margins' widths and the page size, to the font choice, style, and spacing.
 
 In the days of the printing press, a publisher would read through a written document and add notes in the margin on how the document was to be printed. The typesetter would then follow these notes — the *Markup* — to set the physical type and generate the final printed document.
 
-This process, *Markup* and *Typesetting*, is still how all modern day software generates written documents. While popular word processing software like *Microsoft Word* hide the mechanics from the user, underneath the hood, every bolded word and indented paragraph is specified by a *Markup language* that tells the software how to represent the document onscreen or a printer how to render it.
+This process, *Markup* and *Typesetting*, is still how all modern-day software generates written documents. While popular word processing software like *Microsoft Word* hide the mechanics from the user, underneath the hood, every bolded word and indented paragraph is specified by a *Markup language* that tells the software how to represent the document onscreen or a printer how to render it.
 
 ### WYSIWYG *vs* WYSIWYM
 
@@ -35,19 +34,19 @@ For most day to day purposes, word processors like *Microsoft Word* are fast and
 
 ![tweet-image](https://raw.githubusercontent.com/kjmclean/intro_to_markdown_and_pandoc/master/tweet_image.png)
 
-*Microsoft Word* is what is known as a *WYSIWYG* (*What You See is What You Get*). The tradeoff for the speed and convenience of real-time typsetting is a sometimes inexplicable and often infuriating lack of control of how the document is formatted.
+*Microsoft Word* is what is known as a *WYSIWYG* (*What You See is What You Get*). The tradeoff for the speed and convenience of real-time typesetting is a sometimes inexplicable and often infuriating lack of control of how the document is formatted.
 
-The alternative to the *WYSIWYG* is a *WYSIWYM* (*What You See I What You Meant*). A *WYSIWYM* usually requires the user to annotate their document as they write with a specific *Markup language*, then pass the document through some form of interpreter in order to generate the final document. While this process sacrifices the readability of real-time typsetting, and requires a certain degree of proficiency with the markup language of choice, a *WYSIWYM* (in theory) provides the user complete control over every aspect of the final document.
+The alternative to the *WYSIWYG* is a *WYSIWYM* (*What You See I What You Meant*). A *WYSIWYM* usually requires the user to annotate their document as they write with a specific *Markup language*, then pass the document through some form of interpreter in order to generate the final document. While this process sacrifices the readability of real-time typesetting, and requires a certain degree of proficiency with the markup language of choice, a *WYSIWYM* (in theory) provides the user complete control over every aspect of the final document.
 
 ### Common Markup Languages
 
 #### **html**
 
-The most popular *Markup* language in the world is probably *html*, which is used to determine how nearly all text on the web is rendered. For a sense of how *html* markup looks, try right-clicking on this page and selecting *View Page Source*. Each one of those colons, quotes, and parentheses provides typsetting instructions for your browser. The browser then consults the page's associated *Cascading Style Sheet* (*CSS*) on how each markup instruction should be rendered onscreen. Two different *CSS* style sheets will generate two different web pages (*e.g*: different layout, text sizes, or colors).
+The most popular *Markup* language in the world is probably *html*, which is used to determine how nearly all text on the web is rendered. For a sense of how *html* markup looks, try right-clicking on this page and selecting *View Page Source*. Each one of those colons, quotes, and parentheses provides typesetting instructions for your browser. The browser then consults the page's associated *Cascading Style Sheet* (*CSS*) on how each markup instruction should be rendered onscreen. Two different *CSS* style sheets will generate two different web pages (*e.g*: different layout, text sizes, or colors).
 
 #### **LaTeX**
 
-![LaTeX](https://latex.codecogs.com/gif.latex?\LaTeX) and its progenitor ![TeX](https://latex.codecogs.com/gif.latex?\TeX) (pronounced "laytech" and "tech", the last letter is a Greek *Chi*, not an 'x') are part of a family of *WYSIWYM* languages originally developed for typsetting printed documents that is still widely used for typesetting books, journal articles, and theses. Like, *html*, user annotates a written document with specific markup tags then passes it through a ![LaTeX](https://latex.codecogs.com/gif.latex?\LaTeX) interpreter that renders the final document based on the *Class* and *packages* specified by the user. While it has a steep learning curve and can be intimidating for the novice user, it is an extremely powerful tool with a large (if diminishing) user base. If you're interested in trying your hand at ![LaTeX](https://latex.codecogs.com/gif.latex?\LaTeX), start with our tutorial [here](https://github.com/mrsunny0/LaTeX-thesis-proposal).
+![LaTeX](https://latex.codecogs.com/gif.latex?\LaTeX) and its progenitor ![TeX](https://latex.codecogs.com/gif.latex?\TeX) (pronounced "laytech" and "tech", the last letter is a Greek *Chi*, not an 'x') are part of a family of *WYSIWYM* languages originally developed for typesetting printed documents that is still widely used for typesetting books, journal articles, and theses. Like, *html*, user annotates a written document with specific markup tags then passes it through a ![LaTeX](https://latex.codecogs.com/gif.latex?\LaTeX) interpreter that renders the final document based on the *Class* and *packages* specified by the user. While it has a steep learning curve and can be intimidating for the novice user, it is an extremely powerful tool with a large (if diminishing) user base. If you're interested in trying your hand at ![LaTeX](https://latex.codecogs.com/gif.latex?\LaTeX), start with our tutorial [here](https://github.com/mrsunny0/LaTeX-thesis-proposal).
 
 #### Markdown
 
@@ -116,7 +115,7 @@ _pandoc_ is a (near) universal markup translator. Since every word processing fo
 
 Guidelines for installing _pandoc_ on various operating systems can be found [here](https://pandoc.org/installing.html).
 
-To get the most out of the rest of this demo, I recommend using a plain text editor with good syntax highlighting support, such as [Atom](https://atom.io/) or [Sublime Text](https://www.sublimetext.com/). Activating the _Markdown_ syntax highliting in either of these programs will be helpful (see [here](https://atom.io/packages/language-markdown) for Atom, or [here](https://blog.mariusschulz.com/2014/12/16/how-to-set-up-sublime-text-for-a-vastly-better-markdown-writing-experience) for Sublime Text).
+To get the most out of the rest of this demo, I recommend using a plain text editor with good syntax highlighting support, such as [Atom](https://atom.io/) or [Sublime Text](https://www.sublimetext.com/). Activating the _Markdown_ syntax highlighting in either of these programs will be helpful (see [here](https://atom.io/packages/language-markdown) for Atom, or [here](https://blog.mariusschulz.com/2014/12/16/how-to-set-up-sublime-text-for-a-vastly-better-markdown-writing-experience) for Sublime Text).
 
 For the more advanced ![LaTeX](https://latex.codecogs.com/gif.latex?\LaTeX) examples below, you'll need to install one of the many available ![LaTeX](https://latex.codecogs.com/gif.latex?\LaTeX) distributions. I recommend [MikTeX](https://miktex.org/download).
 
@@ -243,7 +242,7 @@ Open up example_08.pdf and take a look. You should see the page ends exactly whe
 
 Every ![LaTeX](https://latex.codecogs.com/gif.latex?\LaTeX) document has an associated class (_e.g._ Book, Thesis, Letter, Article), and every document class is defined by a set of defaults settings (_e.g._ font, font size, margins, _etc_) that can be adjusted and customized by the user. Normally, a ![LaTeX](https://latex.codecogs.com/gif.latex?\LaTeX) document will begin with a _preamble_ that specifies these settings. 
 
-These same class features and settings can be sepecified in a Markdown document prior to _pandoc_ conversion using a _YAML_ ("Yet Another Markup Language") block. 
+These same class features and settings can be specified in a Markdown document prior to _pandoc_ conversion using a _YAML_ ("Yet Another Markup Language") block. 
 
 Try adding the following to the very beginning of the sample_markdown_file.md:
 
@@ -306,7 +305,7 @@ $\newpage$
 ## Works Cited
 ```
 
-See the reference keys starting with the square parentheses and \@ symbols? They are stand-ins for how the citation in the Markdown text. When converting through pandoc, we will specity a citation style and the final document will be rendered in that style.
+See the reference keys starting with the square parentheses and \@ symbols? They are stand-ins for how the citation in the Markdown text. When converting through pandoc, we will specify a citation style and the final document will be rendered in that style.
 
 Download this bibliography file, [pandoc_demo.bib](https://github.com/kjmclean/intro_to_markdown_and_pandoc/raw/master/pandoc_demo.bib), and this citation style file (from the journal, Cell), [cell.csl](https://github.com/kjmclean/intro_to_markdown_and_pandoc/raw/master/cell.csl), into your working directory. Now, convert it to a pdf while calling the bibliography and citation style:
 
