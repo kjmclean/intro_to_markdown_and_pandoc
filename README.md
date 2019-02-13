@@ -45,7 +45,7 @@ The alternative to the *WYSIWYG* is a *WYSIWYM* (*What You See I What You Meant*
 
 The most popular *Markup* language in the world is probably *html*, which is used to determine how nearly all text on the web is rendered. For a sense of how *html* markup looks, try right-clicking on this page and selecting *View Page Source*. Each one of those colons, quotes, and parentheses provides typsetting instructions for your browser. The browser then consults the page's associated *Cascading Style Sheet* (*CSS*) on how each markup instruction should be rendered onscreen. Two different *CSS* style sheets will generate two different web pages (*e.g*: different layout, text sizes, or colors).
 
-#### ![LaTeX](https://latex.codecogs.com/gif.latex?\LaTeX)
+#### **LaTeX**
 
 ![LaTeX](https://latex.codecogs.com/gif.latex?\LaTeX) and its progenitor ![TeX](https://latex.codecogs.com/gif.latex?\TeX) (pronounced "laytech" and "tech", the last letter is a Greek *Chi*, not an 'x') are part of a family of *WYSIWYM* languages originally developed for typsetting printed documents that is still widely used for typesetting books, journal articles, and theses. Like, *html*, user annotates a written document with specific markup tags then passes it through a ![LaTeX](https://latex.codecogs.com/gif.latex?\LaTeX) interpreter that renders the final document based on the *Class* and *packages* specified by the user. While it has a steep learning curve and can be intimidating for the novice user, it is an extremely powerful tool with a large (if diminishing) user base. If you're interested in trying your hand at ![LaTeX](https://latex.codecogs.com/gif.latex?\LaTeX), start with our tutorial [here](https://github.com/mrsunny0/LaTeX-thesis-proposal).
 
@@ -112,7 +112,7 @@ Regardless of what writing software or markup language you prefer, there will co
 
 _pandoc_ is a (near) universal markup translator. Since every word processing format has a markup language at its core, converting from one to another is just a matter of replacing one language's markup for another. If you have a complex, thousand page document written in ![LaTeX](https://latex.codecogs.com/gif.latex?\LaTeX), and need to convert it to _Microsoft_ _Word_, a single _pandoc_ command will do most of the work.
 
-#### Installing _pandoc_ and other useful tools
+#### Installing pandoc and other useful tools
 
 Guidelines for installing _pandoc_ on various operating systems can be found [here](https://pandoc.org/installing.html).
 
@@ -122,7 +122,7 @@ For the more advanced ![LaTeX](https://latex.codecogs.com/gif.latex?\LaTeX) exam
 
 Lastly, this demo assumes a certain degree of familiarity with a \*\nix command line and the _bash_ shell. If you don't know how to change directories and call programs from the command line, you may wish to familiarize yourself with these basics before proceeding.
 
-### Your first _pandoc_ conversion
+### Your first pandoc conversion
 
 Save this [sample_markdown_file.md](https://raw.githubusercontent.com/kjmclean/intro_to_markdown_and_pandoc/master/sample_markdown_file.md) in your working directory. Open it with the text editor of your choice and take a look. You should see a few paragraphs of text marked up with common Markdown markups (_e.g._ \#, \*, _etc_).
 
@@ -143,7 +143,7 @@ pandoc sample_markdown_file.md -o example_02.tex
 
 If you open example_02.tex with your text editor, you should the same text as the Mardown file, except extensively marked-up with ![LaTeX](https://latex.codecogs.com/gif.latex?\LaTeX). 
 
-### Converting to _Microsoft_ _Word_ .docx from Markdown
+### Converting to Microsoft Word from Markdown
 
 _pandoc_ can also convert Markdown markup to _MS_ _Word_ markup. Try directly converting the sample_markdown_file.md to a .docx file by entering the following into the command line.
 
@@ -179,7 +179,7 @@ Open example_05.docx using _MS_ _Word_. See the difference in formatting?
 Try it again with any _MS_ _Word_ file of your own on your computer. _pandoc_ should convert the Markdown file such that the final output matches the reference document's style.
 
 
-### Advanced: Putting ![LaTeX](https://latex.codecogs.com/gif.latex?\LaTeX) in your Markdown
+### Putting LaTeX in your Markdown
 
 #### ![LaTeX](https://latex.codecogs.com/gif.latex?\LaTeX) Symbols
 
